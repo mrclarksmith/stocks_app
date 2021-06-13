@@ -25,7 +25,7 @@ SECRET_KEY = 'h8%xxy9g$t(=o=pvg@-jxga$!@04@)=a%##dc2vh5(94#00jfx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["192.168.1.38"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'stocks_app.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/var/www/django/stocks_app/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
